@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseSortCharArray", "Rev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSum", "TwoSum\TwoSum.csproj", "{84F593B0-982A-43AA-960F-A3CCD1463F80}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoSumII", "TwoSumII\TwoSumII.csproj", "{EBDC7AA7-442B-4913-A2CD-7839EEC5EC6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{84F593B0-982A-43AA-960F-A3CCD1463F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84F593B0-982A-43AA-960F-A3CCD1463F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84F593B0-982A-43AA-960F-A3CCD1463F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDC7AA7-442B-4913-A2CD-7839EEC5EC6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDC7AA7-442B-4913-A2CD-7839EEC5EC6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDC7AA7-442B-4913-A2CD-7839EEC5EC6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDC7AA7-442B-4913-A2CD-7839EEC5EC6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
