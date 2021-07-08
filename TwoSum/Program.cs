@@ -29,6 +29,12 @@ namespace TwoSum
 
             result = TwoSum(nums, target);
             WriteResult(result);
+            
+            nums = new[] {3, 3};
+            target = 6;
+
+            result = TwoSum(nums, target);
+            WriteResult(result);
         }
 
         //Result complexity: O(N*LogN+N) = O(N*LogN)
@@ -55,13 +61,13 @@ namespace TwoSum
             {
                 if (result1 != -1 && result2 != -1) break;
 
-                if (x1 == nums[i])
+                if (result1 == -1 && x1 == nums[i])
                 {
                     result1 = i;
                     continue;
                 }
 
-                if (x2 == nums[i])
+                if (result2 == -1 && x2 == nums[i])
                 {
                     result2 = i;
                 }
