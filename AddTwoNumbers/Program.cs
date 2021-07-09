@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace AddTwoNumbers
 {
@@ -46,7 +45,8 @@ namespace AddTwoNumbers
             ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
             ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
 
-            Console.WriteLine(AddTwoNumbers(l1, l2));
+            //Console.WriteLine(AddTwoNumbers(l1, l2));
+            Console.WriteLine(AddTwoNumbers2(l1, l2));
 
             // Input: l1 = [0], l2 = [0]
             // Output: [0]
@@ -65,7 +65,8 @@ namespace AddTwoNumbers
             Console.WriteLine(result);
         }
 
-        
+        #region Solution 1
+
         //Result complexity O(n)
         public static ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
@@ -82,7 +83,7 @@ namespace AddTwoNumbers
 
             int sum = (l1?.val ?? 0) + (l2?.val ?? 0) + bit;
             bit = 0;
-            
+
             if (sum > 9)
             {
                 bit++;
@@ -91,5 +92,35 @@ namespace AddTwoNumbers
 
             return new ListNode(sum, GetNode(l1?.next, l2?.next, bit));
         }
+
+        #endregion
+
+        #region Solution 2
+
+        public static ListNode AddTwoNumbers2(ListNode l1, ListNode l2)
+        {
+            int bit = 0;
+            ListNode result = new ListNode();
+            ListNode current = result;
+            while (l1 != null || l2 != null)
+            {
+                int sum = (l1?.val ?? 0) + (l2?.val ?? 0) + bit;
+                bit = sum / 10;
+                sum -= 10 * bit;
+                current.next = new ListNode(sum);
+                current = current.next;
+                l1 = l1?.next;
+                l2 = l2?.next;
+            }
+
+            if (bit > 0)
+            {
+                current.next = new ListNode(bit);
+            }
+
+            return result.next;
+        }
+
+        #endregion
     }
 }
