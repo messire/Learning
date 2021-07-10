@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddTwoNumbers", "AddTwoNumb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LongestSubstring", "LongestSubstring\LongestSubstring.csproj", "{C603AE76-EEA8-40FE-A3C4-B7CACDAD1190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MedianSortedArrays", "MedianSortedArrays\MedianSortedArrays.csproj", "{52A7BF69-10C4-4DD4-A873-F7B649B32911}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{C603AE76-EEA8-40FE-A3C4-B7CACDAD1190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C603AE76-EEA8-40FE-A3C4-B7CACDAD1190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C603AE76-EEA8-40FE-A3C4-B7CACDAD1190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52A7BF69-10C4-4DD4-A873-F7B649B32911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A7BF69-10C4-4DD4-A873-F7B649B32911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A7BF69-10C4-4DD4-A873-F7B649B32911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A7BF69-10C4-4DD4-A873-F7B649B32911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
