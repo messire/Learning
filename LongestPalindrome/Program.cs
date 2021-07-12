@@ -50,17 +50,27 @@ namespace LongestPalindrome
 
             for (int i = 0; i < s.Length; i++)
             {
-                StringBuilder tmp = new StringBuilder().Append(s[i]);
+                StringBuilder odd = new StringBuilder().Append(s[i]);
+                StringBuilder even = new StringBuilder();
                 int step = 1;
 
                 while (i - step >= 0 && i + step < s.Length && s[i - step] == s[i + step])
                 {
-                    tmp.Insert(0, s[i - step]);
-                    tmp.Append(s[i + step]);
+                    odd.Insert(0, s[i - step]);
+                    odd.Append(s[i + step]);
                     step++;
                 }
 
-                result = tmp.Length > result.Length ? tmp.ToString() : result;
+                step = 0;
+                while (i - step >= 0 && i + step + 1 < s.Length && s[i - step] == s[i + step + 1])
+                {
+                    even.Insert(0, s[i - step]);
+                    even.Append(s[i + step + 1]);
+                    step++;
+                }
+
+                result = odd.Length > result.Length ? odd.ToString() : result;
+                result = even.Length > result.Length ? even.ToString() : result;
             }
 
             return result;
