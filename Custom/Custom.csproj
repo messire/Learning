@@ -4,11 +4,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{5E6621F3-0AFD-4DBE-A204-14C0F0827454}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{7C7C7417-FC0B-457F-B9CD-F19329C5E318}</ProjectGuid>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>AddTwoNumbers</RootNamespace>
-        <AssemblyName>AddTwoNumbers</AssemblyName>
+        <RootNamespace>Custom</RootNamespace>
+        <AssemblyName>Custom</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -35,17 +35,14 @@
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Drawing" />
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs" />
+        <Compile Include="GetFirst.cs" />
+        <Compile Include="Helpers\Generator.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <ProjectReference Include="..\LeetCode\LeetCode.csproj">
-        <Project>{46f78f05-5dee-4ee1-91bc-b09b938b819e}</Project>
-        <Name>LeetCode</Name>
-      </ProjectReference>
+        <Compile Include="ReverseSortCharArray.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

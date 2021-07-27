@@ -4,11 +4,12 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{5E6621F3-0AFD-4DBE-A204-14C0F0827454}</ProjectGuid>
-        <OutputType>Exe</OutputType>
+        <ProjectGuid>{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC}</ProjectGuid>
+        <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+        <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>AddTwoNumbers</RootNamespace>
-        <AssemblyName>AddTwoNumbers</AssemblyName>
+        <RootNamespace>Custom.Test</RootNamespace>
+        <AssemblyName>Custom.Test</AssemblyName>
         <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -35,16 +36,26 @@
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
+        <Reference Include="System.Drawing" />
         <Reference Include="System.Xml" />
+        <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+            <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Program.cs" />
+        <Compile Include="BaseTest.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="ReverseSortCharArrayTests.cs" />
+        <Compile Include="Tests\GetFirstTests.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\LeetCode\LeetCode.csproj">
-        <Project>{46f78f05-5dee-4ee1-91bc-b09b938b819e}</Project>
-        <Name>LeetCode</Name>
+      <ProjectReference Include="..\Custom\Custom.csproj">
+        <Project>{7c7c7417-fc0b-457f-b9cd-f19329c5e318}</Project>
+        <Name>Custom</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\GetFirst\GetFirst.csproj">
+        <Project>{2d71bd05-a067-4a94-becb-8a50209e9da3}</Project>
+        <Name>GetFirst</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

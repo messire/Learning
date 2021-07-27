@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace GetFirst
 {
-public class Program
+    public class Program
     {
         private static Random _random;
 
@@ -13,7 +13,7 @@ public class Program
 
             Point[] points = GeneratePoints(20, 0, 10);
             WriteCollection("Original collection", points);
-            
+
             IEnumerable<Point> result = GetNearest(points, 5);
 
             WriteCollection("Sorted collection", points);

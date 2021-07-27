@@ -1,4 +1,5 @@
 ﻿using System;
+using LeetCode.Helpers;
 
 namespace AddTwoNumbers
 {
@@ -21,23 +22,6 @@ namespace AddTwoNumbers
  */
     internal class Program
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-
-            public ListNode(int val = 0, ListNode next = null)
-            {
-                this.val = val;
-                this.next = next;
-            }
-
-            public override string ToString()
-            {
-                return $" {val} {next}";
-            }
-        }
-
         public static void Main(string[] args)
         {
             // Input: l1 = [2,4,3], l2 = [5,6,4]
