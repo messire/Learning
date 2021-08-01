@@ -52,6 +52,7 @@
     <Compile Include="Tests\TwoSum2Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\TwoSumTests.cs" />
+    <Compile Include="Tests\ZigZagConversionTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeetCode\LeetCode.csproj">
