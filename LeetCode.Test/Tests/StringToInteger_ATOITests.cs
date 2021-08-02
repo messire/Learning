@@ -54,5 +54,51 @@ namespace LeetCode.Test.Tests
             int result = Tester.Calculate(str);
             CheckResult(result, expected);
         }
+        
+        [Test]
+        public void ATOI_Test6()
+        {
+            string str = "3.14159";
+            int expected = 3;
+            int result = Tester.Calculate(str);
+            CheckResult(result, expected);
+        }
+        
+                
+        [Test]
+        public void ATOI_Test7()
+        {
+            string str = "-+12";
+            int expected = 0;
+            int result = Tester.Calculate(str);
+            CheckResult(result, expected);
+        }
+        
+        [Test]
+        public void ATOI_Test8()
+        {
+            string str = "";
+            int expected = 0;
+            int result = Tester.Calculate(str);
+            CheckResult(result, expected);
+        }
+        
+        [Test]
+        public void ATOI_Test9()
+        {
+            string str = "+1";
+            int expected = 1;
+            int result = Tester.Calculate(str);
+            CheckResult(result, expected);
+        }
+        
+        [Test]
+        public void ATOI_Test10()
+        {
+            string str = "20000000000000000000";
+            int expected = 2147483647;
+            int result = Tester.Calculate(str);
+            CheckResult(result, expected);
+        }
     }
 }

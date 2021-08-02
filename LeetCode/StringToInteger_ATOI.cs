@@ -1,4 +1,6 @@
-﻿namespace LeetCode
+﻿using System.Numerics;
+
+namespace LeetCode
 {
     //Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer
     //(similar to C/C++'s atoi function).
@@ -18,7 +20,7 @@
     //Specifically, integers less than -231 should be clamped to -231,
     //and integers greater than 231 - 1 should be clamped to 231 - 1.
     //Return the integer as the final result.
-    
+
     //Note:
     //Only the space character ' ' is considered a whitespace character.
     //Do not ignore any characters other than the leading whitespace or the rest of the string after the digits.
@@ -30,43 +32,47 @@
             int start = -1;
             int end = -1;
 
-            s = s.TrimStart(' ');
+            s = TrimSpace(s);
 
-            if (!char.IsDigit(s[0]) && s[0] != '-') return 0;
-            string parsed = string.Empty;
-            
-            for (int i = 0; i < s.Length - 1; i++)
+            if (s.Length == 0 || !char.IsDigit(s[0]) && s[0] != '+' && s[0] != '-') return 0;
+
+            for (int i = 0; i < s.Length; i++)
             {
-                parsed += s[i];
-                if (char.IsDigit(s[i]) && start == -1)
-                {
-                    start = i;
-                }
+                start = CheckStart(s[i], start, i);
+                end = CheckEnd(s[i], end, i);
 
-                if (!char.IsDigit(s[i]) && start != -1 && end == -1)
-                {
-                    end = i;
-                }
-
-                if (start != -1 && end != -1) break;
+                if (end != -1) break;
             }
 
-            if (end == -1)
+            if (start == -1) return 0;
+            end = end == -1 ? s.Length - 1 : end;
+
+            string parsed = s.Substring(start, end - start + 1);
+
+            if (start > 0 && (s[start - 1] == '+' || s[start-1] == '-'))
             {
-                end = s.Length - 1;
+                parsed = parsed.Insert(0, $"{s[start - 1]}");
             }
 
-            parsed = s.Substring(start, end - start + 1);
-
-            if (start > 0 && s[start - 1] == '-')
-            {
-                parsed = parsed.Insert(0, "-");
-            }
-
-            long preResult = long.Parse(parsed);
+            BigInteger preResult = BigInteger.Parse(parsed);
 
             int result = preResult > int.MaxValue ? int.MaxValue : preResult < int.MinValue ? int.MinValue : int.Parse(parsed);
             return result;
+        }
+
+        private string TrimSpace(string s)
+        {
+            return s.TrimStart(' ');
+        }
+
+        private int CheckStart(char c, int start, int i)
+        {
+            return char.IsDigit(c) && start == -1 ? i : start;
+        }
+
+        private int CheckEnd(char c, int end, int i)
+        {
+            return !char.IsDigit(c) ? i - 1 : end;
         }
     }
 }
