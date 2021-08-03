@@ -47,6 +47,8 @@
     <Compile Include="Tests\LongestPalindromeTests.cs" />
     <Compile Include="Tests\LongestSubstringTests.cs" />
     <Compile Include="Tests\MedianSortedArraysTests.cs" />
+    <Compile Include="Tests\PalindromeNumberTests.cs" />
+    <Compile Include="Tests\RegularExpressionMatchingTests.cs" />
     <Compile Include="Tests\ReverseIntegerTests.cs" />
     <Compile Include="Tests\StringToInteger_ATOITests.cs" />
     <Compile Include="Tests\TwoSum2Tests.cs" />
