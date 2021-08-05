@@ -43,6 +43,7 @@
     <Compile Include="Helpers\ListNode.cs" />
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="LongestSubstring.cs" />
+    <Compile Include="MaxArea.cs" />
     <Compile Include="MedianSortedArrays.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
