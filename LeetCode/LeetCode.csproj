@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="AddTwoNumbers.cs" />
     <Compile Include="Helpers\ListNode.cs" />
+    <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="LongestSubstring.cs" />
     <Compile Include="MaxArea.cs" />

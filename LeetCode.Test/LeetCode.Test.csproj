@@ -45,6 +45,7 @@
     <Compile Include="BaseTest.cs" />
     <Compile Include="Helpers\BigCollections.cs" />
     <Compile Include="Tests\AddTwoNumbersTests.cs" />
+    <Compile Include="Tests\IntegerToRomanTests.cs" />
     <Compile Include="Tests\LongestPalindromeTests.cs" />
     <Compile Include="Tests\LongestSubstringTests.cs" />
     <Compile Include="Tests\MaxAreaTests.cs" />
