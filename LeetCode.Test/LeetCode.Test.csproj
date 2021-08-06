@@ -46,10 +46,12 @@
     <Compile Include="Helpers\BigCollections.cs" />
     <Compile Include="Tests\AddTwoNumbersTests.cs" />
     <Compile Include="Tests\IntegerToRomanTests.cs" />
+    <Compile Include="Tests\LongestCommonPrefixTests.cs" />
     <Compile Include="Tests\LongestPalindromeTests.cs" />
     <Compile Include="Tests\LongestSubstringTests.cs" />
     <Compile Include="Tests\MaxAreaTests.cs" />
     <Compile Include="Tests\MedianSortedArraysTests.cs" />
+    <Compile Include="Tests\N-TreeLevelOrderTraversalTests.cs" />
     <Compile Include="Tests\PalindromeNumberTests.cs" />
     <Compile Include="Tests\RegularExpressionMatchingTests.cs" />
     <Compile Include="Tests\ReverseIntegerTests.cs" />
