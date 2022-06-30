@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode", "LeetCode\LeetCode.csproj", "{46F78F05-5DEE-4EE1-91BC-B09B938B819E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode.Test", "LeetCode.Test\LeetCode.Test.csproj", "{C7F1CD85-9E4F-4D4D-84F3-35A185352767}"
@@ -7,6 +10,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom", "Custom\Custom.csproj", "{7C7C7417-FC0B-457F-B9CD-F19329C5E318}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom.Test", "Custom.Test\Custom.Test.csproj", "{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{CEECB2B4-1D21-43DD-9607-8A918EBB6B34}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EBB75E3B-40C5-4A8D-A5C2-D0A0A6B07CF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Python", "Python", "{8434147F-1F50-4EAB-BE92-C3215DA4CFBF}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PyLeetCode", "PyLeetCode\PyLeetCode.pyproj", "{D32CF118-1F78-4000-8DC0-2410927529DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +41,21 @@ Global
 		{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D32CF118-1F78-4000-8DC0-2410927529DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D32CF118-1F78-4000-8DC0-2410927529DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46F78F05-5DEE-4EE1-91BC-B09B938B819E} = {CEECB2B4-1D21-43DD-9607-8A918EBB6B34}
+		{C7F1CD85-9E4F-4D4D-84F3-35A185352767} = {EBB75E3B-40C5-4A8D-A5C2-D0A0A6B07CF5}
+		{7C7C7417-FC0B-457F-B9CD-F19329C5E318} = {CEECB2B4-1D21-43DD-9607-8A918EBB6B34}
+		{3B619CC2-DEBF-4389-A0B2-0D20ECC7BEFC} = {EBB75E3B-40C5-4A8D-A5C2-D0A0A6B07CF5}
+		{EBB75E3B-40C5-4A8D-A5C2-D0A0A6B07CF5} = {CEECB2B4-1D21-43DD-9607-8A918EBB6B34}
+		{D32CF118-1F78-4000-8DC0-2410927529DD} = {8434147F-1F50-4EAB-BE92-C3215DA4CFBF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F9C7568-2B9D-4FCA-9689-E9932C4B7EDD}
 	EndGlobalSection
 EndGlobal
