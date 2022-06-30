@@ -25,12 +25,10 @@
 # [[], ['a'], ['b'], ['v'], ['a', 'b'], ['b', 'v'], ['a', 'b', 'v']]
 
 
-inp = 'a b v'
+inp = 'a b'
 lst = inp.split()
-res = []
-# res = [lst[s:s + l] for l in range(0, len(lst) + 1) for s in range(len(lst))  if s + l <= len(lst)]
-for length in range(len(lst) + 1):
-    for start in range(len(lst)):
-        if start + length <= len(lst) and lst[start:start + length] not in res:
-            res.append(lst[start:start + length])
+res = [[]]
+for chunk in range(1, len(lst) + 1):
+    for start in range(len(lst) - chunk + 1):
+        res.append(lst[start:start + chunk])
 print(res)
